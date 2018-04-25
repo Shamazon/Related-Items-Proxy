@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexRoute, browserHistory } from "react-router-3";
 
 import RelatedProducts from './components/App.jsx';
+import PhotoGallery from './photo-gallery/components/app.jsx';
+import Description from './description/components/App.js';
 
 const App = (props) => {
   const id = Number(props.location.pathname.substr(1));
   return (
-    <RelatedProducts id={id} />
+    <div>
+      <Description id={id} />
+      <PhotoGallery id={id} />
+      <RelatedProducts id={id} />
+    </div>
   );
 };
 
@@ -18,4 +24,4 @@ ReactDOM.render(
       <Route path="/:id" component={App} />
     </Route>
   </Router>
-  , document.getElementById('relatedProducts'));
+  , document.getElementById('shamazon'));
