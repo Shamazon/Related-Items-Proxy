@@ -5,6 +5,7 @@ import { Router, Route, Link, IndexRoute, browserHistory } from "react-router-3"
 import RelatedProducts from './components/App.jsx';
 import PhotoGallery from './photo-gallery/components/app.jsx';
 import Description from './description/components/App.js';
+import Reviews from './reviews/components/App.jsx';
 
 const App = (props) => {
   const id = Number(props.location.pathname.substr(1));
@@ -13,6 +14,7 @@ const App = (props) => {
       <Description id={id} />
       <PhotoGallery id={id} />
       <RelatedProducts id={id} />
+      <Reviews id={id} />
     </div>
   );
 };
