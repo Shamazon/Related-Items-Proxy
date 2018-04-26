@@ -11,8 +11,8 @@ const App = (props) => {
   const id = Number(props.location.pathname.substr(1));
   return (
     <div>
-      <Description id={id} />
       <PhotoGallery id={id} />
+      <Description id={id} />
       <RelatedProducts id={id} />
       <Reviews id={id} />
     </div>

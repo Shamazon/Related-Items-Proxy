@@ -9,7 +9,7 @@ import PriceBox from './PriceBox';
 import Stock from './Stock';
 import ItemDescription from './ItemDescription';
 
-import '../index.css';
+// import '../index.css';
 
 class App extends Component {
   constructor(props) {

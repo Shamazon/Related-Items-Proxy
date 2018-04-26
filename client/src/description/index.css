@@ -11,10 +11,10 @@
 body {
   /* margin: 30px; */
   font-size: 25px;
-  font-family: 'AmazonFont', sans-serif;;
+  font-family: 'AmazonFont', sans-serif;
 }
   b {
-    font-family: 'AmazonFontBold', sans-serif;;
+    font-family: 'AmazonFontBold', sans-serif;
     font-weight: 700;
   }
 
@@ -23,7 +23,7 @@ body {
   font-size: 13px;
   line-height: 19px;
   color: #111;
-  display:flex;
+  display: inline-flex;
   width: 33%;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 }
 
 .ifItemPrimeImage {
-    /* background-image: url(./Images-To-Redis/ShamazonIcons.png); */
+    background-image: url(./Images-To-Redis/ShamazonIcons.png);
     height: 15px;
     width: 54px;
     background-position: -5px -490px;
