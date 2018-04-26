@@ -1,3 +1,70 @@
+body {
+    margin: 0;
+}
+
+header.heading {
+    background-image: url('./images/Header.png');
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
+    height: 160px;
+    width: 100%;
+    min-width: 750px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 640px 640px 630px;
+    grid-gap: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .gridContainer .photoGallery {
+    display: inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  
+  .gridContainer .description {
+    display: inline-grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+.gridContainer .relatedProducts {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridContainer .reviews {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.gridContainer .buy {
+    background-image: url('./images/PurchaseImage.png');
+    background-repeat: no-repeat;
+    display: grid;
+    height: 600px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    background-size: 350px;
+}
+
+footer.footing {
+    background-image: url('./images/footer-image.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 600px;
+    height: 600px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+
+
 @font-face {
   font-family: 'AmazonEmber';
   src: url('../fonts/AmazonEmber_Bd.ttf');
@@ -20,7 +87,7 @@ html {
     font-family: 'AmazonEmber', 'Arial', sans-serif;
     background-color: rgb(250,250,250);
     font-size: 13px;
-    line-height: 19px;
+    /* line-height: 19px; */
 }
 
 /*
@@ -87,7 +154,7 @@ h3 {
  */
 .app-container {
     display: grid;
-    /* grid-template-columns: 651.5px 315.5px; */
+    grid-template-columns: 70% 28%;
 }
 
 .main-reviews {
@@ -214,9 +281,8 @@ h3 {
 }
 
 .main-review-container .review-body {
-  max-height: 314px;
+  max-height: 330px;
   text-overflow: clip;
-
   /* Required for text-overflow to do anything */
   overflow: hidden;
  }

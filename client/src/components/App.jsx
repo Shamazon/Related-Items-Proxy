@@ -58,13 +58,15 @@ export default class App extends React.Component {
   render() {
     this.setRelatedProducts(this.props.id);
     return (
-      <RelatedProducts
-        products={this.state.products}
-        showLeftButton={this.state.showLeftButton}
-        showRightButton={this.state.showRightButton}
-        showButton={this.showButton.bind(this)}
-        hideButton={this.hideButton.bind(this)}
-      />
+      <div className="relatedProducts">
+        <RelatedProducts
+          products={this.state.products}
+          showLeftButton={this.state.showLeftButton}
+          showRightButton={this.state.showRightButton}
+          showButton={this.showButton.bind(this)}
+          hideButton={this.hideButton.bind(this)}
+        />
+      </div>
     );
   }
 }

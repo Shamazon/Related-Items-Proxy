@@ -84,7 +84,7 @@ class App extends React.Component {
 
     render () {
         return (
-            <div style={{display: 'inline-flex'}}>
+            <div className="photoGallery">
                 <div className="main">
                     <div>
                         <Photolist hoverPicture={this.hoverPicture} photos={this.state.photoArray}/>

@@ -128,23 +128,25 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div id="flexBox" className="feature">
-          <Title
-            brandName={this.state.data[0]['Brand Name']}
-            titleName={this.state.data[0].Title}
-          />
-          <CustomerReviews
-            starIcon={this.renderStarIcon()}
-            averageStars={this.averageStars()}
-            totalStars={this.state.data[0]['Total Review Stars']}
-          />
+      <div  className="description">
+        <div className="App">
+          <div id="flexBox" className="feature">
+            <Title
+              brandName={this.state.data[0]['Brand Name']}
+              titleName={this.state.data[0].Title}
+            />
+            <CustomerReviews
+              starIcon={this.renderStarIcon()}
+              averageStars={this.averageStars()}
+              totalStars={this.state.data[0]['Total Review Stars']}
+            />
 
-          <PriceBox stringPrice={this.renderedPrice()} />
-          <Stock renderInventory={this.renderedTotalInventory()} />
-          <ItemDescription array={this.getArraysAndRender()} />
-          <div id="Compare With Similar Items">
-            <a href="#">Compare with similar items</a>
+            <PriceBox stringPrice={this.renderedPrice()} />
+            <Stock renderInventory={this.renderedTotalInventory()} />
+            <ItemDescription array={this.getArraysAndRender()} />
+            <div id="Compare With Similar Items">
+              <a href="#">Compare with similar items</a>
+            </div>
           </div>
         </div>
       </div>

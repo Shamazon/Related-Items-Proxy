@@ -38,6 +38,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <div className="reviews">
         <div className='app-container'>
             <h2>Customer Reviews</h2>
             <div className='main-reviews'>
@@ -53,7 +54,7 @@ class App extends React.Component {
               <button className='write-review-button'>Write a Customer Review</button>
             </div>
         </div>
-
+      </div>
     )   
   }
 }

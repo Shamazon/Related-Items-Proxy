@@ -9,14 +9,18 @@ import Reviews from './reviews/components/App.jsx';
 
 const App = (props) => {
   const id = Number(props.location.pathname.substr(1));
-  return (
-    <div>
+  return (<div>
+    <header className="heading"></header>
+    <div className="gridContainer">
       <PhotoGallery id={id} />
       <Description id={id} />
+      <div className="buy"></div>
+      <div className="boughtTogether"></div>
       <RelatedProducts id={id} />
       <Reviews id={id} />
     </div>
-  );
+    <footer className="footing"></footer>
+  </div>);
 };
 
 ReactDOM.render(

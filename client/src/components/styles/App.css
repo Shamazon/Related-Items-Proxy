@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body {
-  font-family: "Open Sans";
-  font-size: 1.2rem;
-  /* text-align: center; */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 650px 700px 100px;
+  grid-gap: 10px;
+}
+
+.gridContainer .photoGallery {
+  display: inline-grid;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.gridContainer .description {
+  display: inline-grid;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
