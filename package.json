@@ -28,6 +28,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "webpack -d | node server.js",
     "start": "node server.js",
     "start:apis": "node ./photo-gallery/server/server.js | node ./related-products/server/index.js | node ./product-description/server/server.js | node ./reviews/server/index.js",
     "dev:start": "nodemon server/index.js",

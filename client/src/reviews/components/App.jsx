@@ -24,7 +24,7 @@ class App extends React.Component {
     let product = this.props.product ? this.props.product : 0; 
     $.ajax({
       method: 'GET',
-      url: `http://localhost:3005/reviews/${product}`,
+      url: `http://52.43.195.69/reviews/${product}`,
       dataType: 'json',
       success: (data, status) => {
         if(status === 'success') {
